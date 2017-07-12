@@ -1,0 +1,69 @@
+問題151
+turtle.home()
+turtle.clear()
+
+for i in range(6):
+  turtle.forward(100)
+  turtle.left(60)
+
+問題153
+def func():
+  i = 3
+  return i
+ 
+
+func()
+
+問題154
+
+def func(v):
+  i = v + 3
+  return i
+  
+  
+func(5)
+問題157
+
+def total(n):
+    s=0
+    for i in range(1,n+1):
+      s+=i
+    return s
+    
+問題158
+import turtle
+turtle = turtle.Turtle()
+
+def center_circle():
+  turtle.penup()
+  turtle.forward(200)
+  turtle.left(90)
+  turtle.pendown()
+  turtle.circle(200)
+  turtle.left(90)
+  turtle.penup()
+  turtle.forward(200)
+  turtle.pendown()
+  
+  
+center_circle()
+
+問題160
+def circle(x,y,r):
+  turtle.up()
+  turtle.home()
+  turtle.forward(x)
+  turtle.left(90)
+  turtle.forward(y)
+  turtle.forward(r)
+  turtle.left(90)
+  turtle.pd()
+  turtle.circle(r)
+
+turtle.home()
+turtle.clear()
+
+circle(100,-100,50)
+circle(100,100,50)
+circle(-100,-100,50)
+circle(-100,100,50)
