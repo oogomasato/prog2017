@@ -1,0 +1,87 @@
+import turtle
+t = turtle.Turtle()
+
+t.home()
+t.clear()
+
+t.forward(100)
+t.left(90)
+t.forward(100)
+
+
+def rect(x, y, a):
+  t.up()
+  t.home()
+  t.forward(x)
+  t.left(90)
+  t.forward(y)
+  t.down()
+  for i in range(4):
+    t.forward(a)
+    t.left(-90)
+    
+問題168
+
+class Dice:
+  face_num = 6 ＃6面体
+  def shoot(self):　＃shootの機能を持つ
+    return random.randint(1, self.face_num)
+    
+import random
+
+aDice = Dice()　＃クラスをもとにオブジェクトを作る。
+aDice.shoot()　＃オブジェクトを実行
+
+
+他
+aDice.face_num=1000 ＃面数の変更
+aDice.shoot()
+
+問題169
+class Dice:
+  def __init__(self, val):
+    self.face_num = val
+  def shoot(self):
+    return random.randint(1, self.face_num)
+
+
+import random
+aDice = Dice(12)
+aDice.shoot()
+
+
+問題170
+クラス名　Dice
+性質　　　face_num #(アトリビュート）
+機能　　　shoot()#(メソッド）
+
+問題173 __init__
+
+10章オプショナル
+
+オブジェクト指向ﾌﾟﾛｸﾞﾗﾐﾝｸﾞ
+クラスの概念
+クラス派生の概念　例　自動車→乗り物←自転車
+
+
+11章
+問題179
+アナコンダでpythonと打つ
+問題181
+答CUI　character　user　interfaceの略
+　↕
+　GUI　graphical　user　interface
+
+>　←リダイレクト　書き込む
+< 読み込む
+
+
+
+
+
+
+
+
+
+
+
